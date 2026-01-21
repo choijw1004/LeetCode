@@ -1,26 +1,35 @@
+import java.util.*;
+
 class Solution {
-    private boolean isGood(String st){
-        
-        HashSet<Character> hs = new HashSet<>();
-
-        for(int i = 0 ; i < 3; i++){
-            if(hs.contains(st.charAt(i))) return false;
-
-            hs.add(st.charAt(i));
-        }
-        return true;
-    }
     public int countGoodSubstrings(String s) {
-        int n = s.length();
+        int i = 0;
+        int j = 0;
         int ans = 0;
+        
+        int size = 3;
+        int n = s.length();
+        HashMap<Character, Integer> map = new HashMap<>();
 
-        for(int i = 0; i < n-2; i++){
-            StringBuilder sb = new StringBuilder();
-            for(int j = i; j < i+3; j++){
-                sb.append(s.charAt(j));
+        while(j < n){
+            if(j - i + 1< size){
+                map.put(s.charAt(j),map.getOrDefault(s.charAt(j),0) + 1);
+                j++;
             }
-            if(isGood(sb.toString())) ans++;
+            else{
+                map.put(s.charAt(j),map.getOrDefault(s.charAt(j),0) + 1);
+
+                if(map.size() == size){
+                    ans++;
+                }
+
+                map.put(s.charAt(i),map.getOrDefault(s.charAt(i),0) -1);
+                if(map.get(s.charAt(i)) <= 0) map.remove(s.charAt(i));
+                i++;
+                j++;
+            }
         }
+
         return ans;
+        
     }
 }
