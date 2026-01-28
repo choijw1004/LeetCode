@@ -29,7 +29,7 @@ class Solution {
     }
 
     private boolean canEat(long time){
-        int cnt = 0;
+        long cnt = 0;
 
         for(int p : piles){
             cnt += (p + time -1)/ time;
