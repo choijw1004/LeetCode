@@ -24,7 +24,6 @@ class Solution {
     
     private void bfs(int sx, int sy){
         if(grid[sx][sy] <= pricing[1] && grid[sx][sy] >= pricing[0]) list.add(new Node(sx, sy, grid[sx][sy], 0));    
-        // System.out.println("sx = " + sx + "sy = " + sy);
         Queue<int[]> q = new LinkedList<>();
         q.offer(new int[]{sx, sy});
         visited[sx][sy] = true;
@@ -59,10 +58,6 @@ class Solution {
 
     }
     public List<List<Integer>> highestRankedKItems(int[][] grid, int[] pricing, int[] start, int k) {
-
-        //pricing[0] = price start;
-        //pricing[1] = price end;
-        
         this.grid = grid;
         this.pricing = pricing;
         this.start = start;
@@ -73,22 +68,7 @@ class Solution {
         this.visited = new boolean[n][m];
 
         bfs(start[0], start[1]);
-        // for(var l : list){
-        //     System.out.print(l.x + " ");
-        //     System.out.print(l.y + " ");
-        //     System.out.print(l.price + " ");
-        //     System.out.print(l.dist + " ");
-        //     System.out.println();
-        // }
-        // System.out.println(list);
-        //1. short dist
-        //2. cheap price
-        //3. row
-        //4. col
 
-        // 0 2 0 
-        //  0 
-        
         Collections.sort(list, (a,b) ->{
             if(a.dist != b.dist) return a.dist - b.dist;
             else if(a.price != b.price) return a.price - b.price;
@@ -110,8 +90,6 @@ class Solution {
             }
         }
         
-        // 0 2 0 
-        // 
         else{
             for(int i = 0; i < k; i++){
                 if(cnt == k) break;
