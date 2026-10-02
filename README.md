@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/choijw1004/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0695-max-area-of-island](https://github.com/choijw1004/LeetCode/tree/main/0695-max-area-of-island/) | Medium |
 | [2146-k-highest-ranked-items-within-a-price-range](https://github.com/choijw1004/LeetCode/tree/main/2146-k-highest-ranked-items-within-a-price-range/) | Medium |
 ## Breadth-First Search
@@ -20,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/choijw1004/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [2146-k-highest-ranked-items-within-a-price-range](https://github.com/choijw1004/LeetCode/tree/main/2146-k-highest-ranked-items-within-a-price-range/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
@@ -38,4 +40,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0695-max-area-of-island](https://github.com/choijw1004/LeetCode/tree/main/0695-max-area-of-island/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0049-group-anagrams](https://github.com/choijw1004/LeetCode/tree/main/0049-group-anagrams/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0049-group-anagrams](https://github.com/choijw1004/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 <!---LeetCode Topics End-->
